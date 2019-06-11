@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="form-validation.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/pzpn.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="regulamin.html">Regulamin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formularz.html">Bilety</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="koszyk.html">Koszyk</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="containter-fluid padding form-img">
+    <div class="headform">
+        <h2> Kup bilet na mecz!</h2>
+        <h4> Najbliższy mecz reprezentacji Polski odbędzie się 10.06.2019</h4>
+        <h1> Polska - Izrael</h1>
+                Wypełnij formularz i przeżyj niesamowite emocje!<br>
+    </div>
+    <div class="form-div">
+        <form id="form-ticket">
+                <ul class="flex-outer">
+                        <li class="ramka">
+                            <label for="owner-name">Imię: </label>
+                            <input type="text" id="owner-name">
+                            <span id="owner-name-error" class="warning"></span>
+                        </li>
+                        <li class="ramka">
+                            <label for="owner-lastname">Nazwisko: </label>
+                            <input type="text" id="owner-lastname">
+                            <span id="owner-lastname-error" class="warning"></span>
+                        </li>
+                        <li class="ramka">
+                            <label for="email">Adres email: </label>
+                            <input type="email" id="email">
+                            <span id="email-error" class="warning"></span>
+                        </li>
+                        <li>
+                        <li>
+                            <label for="number">Numer telefonu: </label>
+                            <input type="tel" id="number">
+                            <span id="number-error" class="warning"></span>
+                        </li>
+                        <li>
+                        <p>Wybierz kategorię biletu: </p>
+                <ul class="flex-inner">
+                            <li>
+                                <input type="radio" name="ticket" value="1" id="kat1">
+                                <label for="A">Kat. 1</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="ticket"  value="2" id="kat2">
+                                <label for="B">Kat. 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="ticket" value="3" id="kat3">
+                                <label for="C">Kat. 3</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="ticket" value="4" id="kat4">
+                                <label for="D">Kat. 4</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="ticket" value="5" id="kat5">
+                                <label for="E">Kat. 5</label>
+                            </li>
+                </ul>
+                        <span id="ticket-error" class="warning"></span>
+                        </li>
+                        <li class="button-border">
+                            <button class="button" type="submit" id="submitBtn">Kupuję!</button>
+                        </li>
+                </ul>
+                    
+                </form>               
+        </div>
+ </div>
+
+
+
+
+<!--- Footer -->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="img/logopzpn.png" alt="logopzpn">
+                <hr class="light">
+                <h4>Kontakt</h4>
+                <p>555-555-555</p>
+                <p>pzpn@pzpn.com</p>
+                <p>ul. Bitwy Warszawskiej 1920 r. 7</p>
+                <p>02-366 Warszawa</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>Prezes PZPN</h4>
+                <h5>Zbigniew Boniek</h5>
+                <hr class="light">
+                <p>Wiceprezes ds. szkoleniowych: Marek Koźmiński</p>
+                <p>Wiceprezes ds. piłkarstwa amatorskiego: Jan Bednarek</p>
+                <p>Wiceprezes ds. zagranicznych: Andrzej Padewski</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>Stadion Narodowy</h4>
+                <hr class="light">
+                <p>al. Księcia Józefa Poniatowskiego 1</p>
+                <p>03-901 Warszawa</p>
+            </div>
+            <div class="col-12">
+                <hr class="light-100">
+                <h5>&copy;Adam Przytuła</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="koszyk.js"></script>
+	<link href="style.css" rel="stylesheet">
+        <link href="koszyk.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/pzpn.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="regulamin.html">Regulamin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formularz.html">Bilety</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="koszyk.html">Koszyk</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="containter-fluid padding">
+    <div class="SesionS padding margin">
+        <h3>Sesion Storage</h3><br>
+            <div id="div-table">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Dane osobowe</th>
+                            <th colspan="1">Kategoria</th> 
+                            <th colspan="2">Edycja</th>
+                        </tr>
+                        <tr>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                            <th>Adres email</th>
+                            <th>Numer</th>
+                            <th>Biletu</th>
+                            <th>Modyfikuj</th>
+                            <th>Usuń</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+                <div id="clear-storage">
+                    <button id="clear-local-storage" style="float:left;">Wyczyść</button>
+                </div>
+            </div>
+            
+        </div>    
+ </div>
+
+
+
+
+<!--- Footer -->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="img/logopzpn.png" alt="logopzpn">
+                <hr class="light">
+                <h4>Kontakt</h4>
+                <p>555-555-555</p>
+                <p>pzpn@pzpn.com</p>
+                <p>ul. Bitwy Warszawskiej 1920 r. 7</p>
+                <p>02-366 Warszawa</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>Prezes PZPN</h4>
+                <h5>Zbigniew Boniek</h5>
+                <hr class="light">
+                <p>Wiceprezes ds. szkoleniowych: Marek Koźmiński</p>
+                <p>Wiceprezes ds. piłkarstwa amatorskiego: Jan Bednarek</p>
+                <p>Wiceprezes ds. zagranicznych: Andrzej Padewski</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>Stadion Narodowy</h4>
+                <hr class="light">
+                <p>al. Księcia Józefa Poniatowskiego 1</p>
+                <p>03-901 Warszawa</p>
+            </div>
+            <div class="col-12">
+                <hr class="light-100">
+                <h5>&copy;Adam Przytuła</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
